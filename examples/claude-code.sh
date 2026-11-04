@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
-# Connect Claude Code to the Kaitoi Studio MCP server.
-#
-# Mint your personal token inside Kaitoi Studio → Settings → MCP
-# and paste it in place of YOUR_TOKEN below.
+# Add the hosted Kaitoi Studio MCP using its OAuth discovery.
+set -euo pipefail
 
 claude mcp add --transport http kaitoi-studio \
-  https://mcp.studio.kaitoi.io \
-  --header "Authorization: Bearer YOUR_TOKEN"
+  https://mcp.studio.kaitoi.io
 
-# Verify:
-#   ask Claude Code → "Use Kaitoi Studio to list my projects."
+# Open /mcp in Claude Code and complete browser sign-in/consent when prompted.
+# Verify by asking: "Use Kaitoi Studio to list my projects."
+# For manual bearer-key clients, generate the exact config in Studio Settings → MCP.

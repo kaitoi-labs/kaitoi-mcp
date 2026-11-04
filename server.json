@@ -3,24 +3,16 @@
   "name": "io.kaitoi/studio",
   "title": "Kaitoi Studio",
   "description": "Build and run visual creative-production workflows from your AI agent.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
-    "url": "https://github.com/kaitoilabs/kaitoi-mcp",
+    "url": "https://github.com/kaitoi-labs/kaitoi-mcp",
     "source": "github"
   },
   "websiteUrl": "https://kaitoi.io/studio",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.studio.kaitoi.io",
-      "headers": [
-        {
-          "name": "Authorization",
-          "description": "Bearer token minted in Kaitoi Studio under Settings → MCP",
-          "isRequired": true,
-          "isSecret": true
-        }
-      ]
+      "url": "https://mcp.studio.kaitoi.io"
     }
   ]
 }

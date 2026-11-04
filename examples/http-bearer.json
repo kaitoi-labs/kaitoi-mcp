@@ -1,0 +1,11 @@
+{
+  "_comment": "Optional manual-token configuration. Replace YOUR_TOKEN with a key generated in Kaitoi Studio Settings → MCP. Never commit the configured token. OAuth-capable clients should use http-native.json instead.",
+  "mcpServers": {
+    "kaitoi-studio": {
+      "url": "https://mcp.studio.kaitoi.io",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN"
+      }
+    }
+  }
+}
